@@ -1,1 +1,71 @@
-contenedor
+:root {
+    --rojo: #E50914;
+    --fondo: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: linear-gradient(rgba(238, 130, 238, 0.7), rgba(10, 130, 238, 0.7)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTaGR1fjtDzFUQIFKSxdiOH2JNlyeu3GKOry8C_gMbrz49SD3TV&usqp=CAU);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logotipo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: #fff;
+    font-size: 40px;
+}
+
+header nav a {
+    font-family: 'Patrick Hand', cursive;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a:active {
+    color: var(--rojo);
+}
+
+
+@media screen and (max-width: 800px) {
+    header .logotipo {
+        font-size: 30px;
+    }
+    
+    .menu {
+        text-align: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    
+    header .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+}
